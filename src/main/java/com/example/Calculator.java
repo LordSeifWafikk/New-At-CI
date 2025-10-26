@@ -17,7 +17,7 @@ public class Calculator {
     // BUG: wrong zero handling: should throw IllegalArgumentException
     public int divide(int a, int b) {
         if (b == 0) {
-            return 0; // intentional bug
+            throw new IllegalArgumentException("Division by zero");
         }
         return a / b;
     }
