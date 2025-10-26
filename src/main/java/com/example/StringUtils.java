@@ -17,10 +17,9 @@ public class StringUtils {
     // BUG: counts only lowercase vowels
     public int countVowels(String s) {
         if (s == null) return 0;
-        
         int c = 0;
         for (char ch : s.toCharArray()) {
-            if ("aeiouAEIOU".indexOf(ch) >= 0) c++;
+            if ("aeiouyAEIOUY".indexOf(ch) >= 0) c++;
         }
         return c;
     }
