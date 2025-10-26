@@ -21,7 +21,7 @@ public class Statistics {
         if (n % 2 == 1) {
             return copy[n/2];
         } else {
-            return copy[n/2-1]; // intentional bug (should average copy[n/2 - 1] and copy[n/2])
+            return (copy[n/2 - 1] + copy[n/2]) / 2.0; // intentional bug (should average copy[n/2 - 1] and copy[n/2])
         }
     }
 
