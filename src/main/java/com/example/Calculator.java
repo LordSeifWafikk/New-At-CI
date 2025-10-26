@@ -3,7 +3,7 @@ package com.example;
 public class Calculator {
     // BUG: off-by-one in add
     public int add(int a, int b) {
-        return a + b + 1; // intentional bug
+        return a + b; // intentional bug
     }
 
     public int subtract(int a, int b) {
